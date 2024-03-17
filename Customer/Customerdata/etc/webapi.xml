@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+
+<!-- FOR SINGLE ID -->
+
+    <!-- <route url="/V1/customer/getById" method="POST">
+        <service class="Customer\Customerdata\Api\CustomerRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route> -->
+
+
+
+<!-- FOR MULTIPLE IDS -->
+
+     <route url="/V1/customer/getByIds" method="POST">
+        <service class="Customer\Customerdata\Api\CustomerRepositoryInterface" method="getByIds"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+</routes>
+
+
+<!-- JSON for single id -->
+<!-- " customerId:1 " -->
+
+
+<!-- JSON for multiple id -->
+<!-- "customerIds:[1,2,3]" -->

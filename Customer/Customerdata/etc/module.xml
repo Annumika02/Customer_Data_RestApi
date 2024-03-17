@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- app/code/Meetanshi/CustomApi/etc/module.xml -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Customer_Customerdata" setup_version="1.0.0">
+        <sequence>
+            <!-- Define dependencies if any -->
+        </sequence>
+    </module>
+</config>
